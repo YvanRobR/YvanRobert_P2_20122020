@@ -18,21 +18,23 @@ body
 }
 
 
-/* ############## Début barre navigation ############## */
+/*	################################################## 
+	############# Début barre navigation #############
+	##################################################	*/
 
 header
 {
-	margin-bottom: 15px;
+	margin-bottom: 15px; /*marge ext bas header*/
 }
 
-.barrenav img
+.barrenav img /*position logo site*/
 {
 	padding-top: 25px;
 	margin-right: 45%;
 	margin-left: 3vw;
 }
 
-.barrenav
+.barrenav /* flex menu navigation (hébergement activité etc) */
 {
 	display: flex;
 	flex-wrap: wrap;
@@ -40,41 +42,37 @@ header
 }
 
 
-.liennav
+.liennav /*position liens menu navigation*/
 {
 	text-align: center;
 	margin-top: auto;
 	/* border: solid 1px black; */
 }
 
-.liennav a
+.liennav a /*formatage liens menu navigation*/
 {
 	text-decoration: none;
+	color: black;
 }
 
-.inscription
+.inscription /*position lien s'incrire*/
 {
 	margin-right: 1vw;
 	margin-bottom: 10px;
 }
 
-.inscription a
+.inscription a /*formatage lien s'incrire*/
 {
 	font-weight: bold;
 	color: #0065fc;
 }
 
-.demi a
-{
-	color: black;
-}
-
-.demi
+.demi /*position 50/50 liens hébergement et activités écrans mobiles*/
 {
     width: 50vw;
 }
 
-.hoovernav
+.hoovernav /*position et taille éléments pour passage souris*/
 {
 	display: flex;
 	flex-direction: column;
@@ -82,17 +80,7 @@ header
 	/* border: solid 1px black; */
 }
 
-.liennav:hover ~ .couleurhoover
-{
-	background-color: #0065fc;
-}
-
-.liennav:hover
-{
-	color: #0065fc;
-}
-
-.couleurhoover
+.couleurhoover /*couleur de base taille et position petite barre sans le passage de la souris*/
 {
     background-color: rgb(216, 223, 230);
     width: 100%;
@@ -100,7 +88,12 @@ header
 	margin-top: 15px;
 }
 
-.liennav a:hover
+.liennav:hover ~ .couleurhoover /*couleur fond petite barre passage souris*/
+{
+	background-color: #0065fc;
+}
+
+.liennav a:hover /*couleur liens au passage souris*/
 {
 	color: #0065fc;
 }
@@ -150,26 +143,25 @@ header
 		margin-bottom: 10px;
 	}
 
-	.hoovernav:nth-child(2)
+	.hoovernav:nth-child(2) /*inversion éléments navigation*/
 	{
 		order: 4;
 	}
 
-	.hoovernav:nth-child(3)
+	.hoovernav:nth-child(3)/*inversion éléments navigation*/
 	{
 		order: 2;
 	}
 
-	.hoovernav:nth-child(4)
+	.hoovernav:nth-child(4)/*inversion éléments navigation*/
 	{
 		order: 3;
 	}
 
 	.hoovernav
 	{
-		flex-direction: column-reverse;
-		height: 68px;
-		/* border: solid 1px black; */
+		flex-direction: column-reverse; /*inversion position petite barre survol souris*/
+			/* border: solid 1px black; */
 	}
 
 	.couleurhoover
@@ -179,18 +171,20 @@ header
 		/* border: solid 1px black; */
 	} 
 }
-
-/* ############## Fin barre navigation ############## */
-
-
-
+/*	################################################## 
+	############## Fin barre navigation ##############
+	##################################################	*/
 
 
 
 
 
 
-/* ############## Début bloc recherche ############## */
+
+
+/*	################################################## 
+	############## Début bloc recherche ##############
+	##################################################	*/
 
 #recherche
 {
@@ -205,7 +199,9 @@ header
 
 
 
-/* ############## Fin bloc recherche ############## */
+/*	################################################## 
+	############### Fin bloc recherche ###############
+	##################################################	*/
 
 
 
@@ -215,9 +211,11 @@ header
 
 
 
-/* ############## Début footer ############## */
+/*	################################################## 
+	################## Début footer ##################
+	##################################################	*/
 
-footer
+footer /*flex position taille couleur fond footer*/
 {
 	display: flex;
 	flex-direction: column;
@@ -228,30 +226,29 @@ footer
 	margin-top: 40px;
 }
 
-.boiteFooter ul
+.boiteFooter ul /*formatage listes à puce*/
 {
 	list-style-type: none;
 }
 
-.boiteFooter
+.boiteFooter /*position éléments footer*/
 {
-	margin-right: auto;
 	display: flex;
+	margin-right: auto;
 }
 
-.boiteFooter a
+.boiteFooter a /*formatage et position liens des éléments du footer*/
 {
 	display: inline-block;
 	font-weight: normal;
 	text-decoration: none;
-	text-emphasis: none;
 	color: black;
 	font-size: 15px;
 	font-weight: 400;
 	padding-top: 15px;
 }
 
-/* passage au dessus de 600px */
+/* passage au dessus de 700px */
 
 @media (min-width: 700px)
 {
@@ -261,4 +258,6 @@ footer
 	}
 }
 
-/* ############## Fin footer ############## */
+/*	################################################## 
+	################### Fin footer ###################
+	##################################################	*/
