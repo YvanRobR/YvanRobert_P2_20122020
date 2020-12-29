@@ -10,11 +10,18 @@
 *
 {
 	font-family: 'Raleway', sans-serif;
+	box-sizing: border-box; /*indique au navigateur de prendre en compte la bordure et le remplissage dans la valeur définie pour la largeur et la hauteur*/
 }
 
 body
 {
 	margin: 0px;
+	overflow: hidden;
+}
+
+img
+{
+	object-fit: cover;
 }
 
 
@@ -188,11 +195,70 @@ header
 
 #recherche
 {
-	margin-left: 3vw;
-	
-
+	margin-left: 2vw; /*petite marge à gauche*/
+	margin-right: 2vw;
+	/*border: solid 1px black;*/
 }
 
+.r1
+{
+	display: flex;
+	margin-bottom: 25px;
+	margin-left: 10vw;
+	/*border: solid 1px blue;*/
+}
+
+.emplacement_icone
+{
+	background-color: #f2f2f2;
+	padding: 10px; /*repousse l'icone des bords*/
+	margin-left: 0px;
+	/*border: solid 1px red;*/
+}
+
+.iconegauche
+{
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+
+	/*border: solid 2px black;*/
+}
+
+.iconedroite
+{
+	border-radius: 10px;
+	color: white; /*couleur loupe*/
+	background-color: #0065fc;
+	/*border: solid 3px black;*/
+}
+
+.boutton_recherche {
+	display: none;
+}
+
+.zone_saisie
+{
+	padding: 6px;
+	font-size: 17px;
+	font-weight: 600;
+	border: 1px solid #f2f2f2;
+	width: 200px;
+	margin-left: 0px;
+	/*border: solid 3px black;*/
+}
+
+/* passage écran supérieur à écran mobile */
+
+@media (min-width: 700px)
+{
+	.r1
+	{
+		display: flex;
+		margin-bottom: 25px;
+		margin-left: 0px;
+		/*border: solid 1px blue;*/
+	}
+}
 
 
 
