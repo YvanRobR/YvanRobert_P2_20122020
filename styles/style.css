@@ -20,6 +20,10 @@ body
 
 /* ############## Début barre navigation ############## */
 
+header
+{
+	margin-bottom: 15px;
+}
 
 .barrenav img
 {
@@ -46,7 +50,6 @@ body
 .liennav a
 {
 	text-decoration: none;
-	text-emphasis: none;
 }
 
 .inscription
@@ -182,6 +185,27 @@ body
 
 
 
+
+
+
+
+
+/* ############## Début bloc recherche ############## */
+
+#recherche
+{
+	margin-left: 3vw;
+	
+
+}
+
+
+
+
+
+
+
+/* ############## Fin bloc recherche ############## */
 
 
 
