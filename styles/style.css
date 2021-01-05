@@ -16,13 +16,15 @@
 body
 {
 	margin: 0px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 img
 {
 	object-fit: cover;
 }
+
+
 
 
 /*	################################################## 
@@ -208,31 +210,33 @@ header
 	/*border: solid 1px blue;*/
 }
 
-.emplacement_icone
+
+
+.iconegauche
 {
 	background-color: #f2f2f2;
 	padding: 10px; /*repousse l'icone des bords*/
 	margin-left: 0px;
-	/*border: solid 1px red;*/
-}
-
-.iconegauche
-{
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 
 	/*border: solid 2px black;*/
 }
 
-.iconedroite
+.bouton_recherche1
 {
+	background-color: #f2f2f2;
+	padding: 10px; /*repousse l'icone des bords*/
+	margin-left: 0px;
 	border-radius: 10px;
 	color: white; /*couleur loupe*/
 	background-color: #0065fc;
+	border: none;
 	/*border: solid 3px black;*/
 }
 
-.boutton_recherche {
+.bouton_recherche2
+{
 	display: none;
 }
 
@@ -258,12 +262,141 @@ header
 		margin-left: 0px;
 		/*border: solid 1px blue;*/
 	}
+
+
+	.bouton_recherche1
+	{
+		display: none;
+	}
+
+	.bouton_recherche2
+	{
+		padding: 8px; /*repousse le texte des bords*/
+		background: #0065fc;
+		color: white;
+		font-size: 17px;
+		font-weight: 600;
+		border: none;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		margin-left: -1px; /* permet de coller le bouton au formulaire*/
+	}
+
+}
+
+/*	################################################## 
+	############### Début bloc filtres ###############
+	##################################################	*/
+
+
+
+
+.filtres
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.elementsfiltre:hover
+{
+	cursor: pointer; /*curseur doigt*/
+	color: #0065fc;
+}
+
+.elementsfiltre
+{
+	display: flex;
+	margin: 3px;
+	text-align: center;
+	border: solid;
+	border-radius: 40px;
+	border-width: 2px;
+	border-color: lightgrey;
+}
+
+.elementsfiltre p
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-weight: bold;
+}
+
+.filtres h3
+{
+	width: 100%;
+	height: 40px;
+	padding-top: 10px;
+}
+
+.elementicones
+{
+	display: flex;
+	align-items: center;
+	background-color: #deebff;
+	height: 40px;
+	border-radius: 50%;
+	margin: -2px;
+}
+
+.icones
+{
+	background-color: #deebff;
+	color: #0065fc;
+	width: 40px;
+	border-radius: 50%;
+}
+
+.element_iconeinfo
+{
+	display: flex;
+	margin: 35px 0 20px 0;
+}
+
+.element_iconeinfo p
+{
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 12px;
+}
+
+.iconeinfo
+{
+	display: flex;
+	color: #0065fc;
+	border: 1px solid;
+	border-color: lightgray;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin-right: 7px;
+}
+
+.tailleicone
+{
+	font-size: 10px;
+	margin: auto;
 }
 
 
+/* passage écran supérieur à écran mobile */
+
+@media (min-width: 700px)
+{
+  .filtres h3
+	{
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+}
 
 
-
+/*	################################################## 
+	################ Fin bloc filtres ################
+	##################################################	*/
 
 /*	################################################## 
 	############### Fin bloc recherche ###############
