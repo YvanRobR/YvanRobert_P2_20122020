@@ -253,7 +253,11 @@ header
 
 /* passage écran supérieur à écran mobile */
 
-@media (min-width: 700px)
+
+
+
+
+@media (min-width: 760px)
 {
 	.r1
 	{
@@ -283,6 +287,16 @@ header
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
 
 /*	################################################## 
 	############### Début bloc filtres ###############
@@ -384,7 +398,7 @@ header
 
 /* passage écran supérieur à écran mobile */
 
-@media (min-width: 700px)
+@media (min-width: 800px)
 {
   .filtres h3
 	{
@@ -400,6 +414,380 @@ header
 
 /*	################################################## 
 	############### Fin bloc recherche ###############
+	##################################################	*/
+
+
+
+
+
+
+
+
+
+/*	################################################## 
+	############# début bloc hébergement #############
+	##################################################	*/
+
+
+
+
+.souris:hover
+{
+	cursor: pointer;
+}
+
+#hebergement
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column-reverse; /* ############ media querie ############*/ 
+	width: 94vw;
+	/*border: solid 1px black;*/
+}
+
+.bloc_hebergement
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column; /* ############ media querie ############*/ 
+	margin: 15px 1vw 15px 0;
+	padding: 2vw; /* ############ media querie ############*/
+	border-radius: 20px;
+}
+
+.bloc_hebergement h3
+{
+	padding-left: 1vw;
+	margin: 0;
+}
+
+.bloc_hebergement p
+{
+	padding-left: 1vw;
+	margin: 0;
+}
+
+/*##### étoiles ######*/
+
+.bloc_etoiles
+{
+	padding-left: 1vw;
+	margin-top: auto;
+	padding-bottom: 1vw;
+}
+
+.bleu
+{
+	color: rgb(0, 91, 251);
+}
+
+.gris
+{
+	color: rgb(214, 214, 214);
+}
+
+.element_hebergement
+{
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	box-shadow: 1px 1px 1px 1px rgb(245, 242, 242);
+	width: 94vw;  /*########## media querie ############*/
+	margin: 1vw;
+	height: 180px;
+	/*border: solid 1px black;*/
+}
+
+.element_hebergement img
+{
+	border-top-left-radius: 17px; /*bords arrondis sur l'image*/
+	border-top-right-radius: 17px;
+	/*border: solid 1px black;*/
+}
+
+.image_elements
+{
+	padding: 4px; /*laisser de l'espace entre l'image et le bord*/
+	height: 60%;
+	/*border: solid 1px black;*/
+}
+
+.aff_plus
+{
+	font-weight: bold;
+	font-size: 12px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+
+
+
+/* partie les plus populaires*/
+
+
+
+
+
+.bloc_populaires
+{
+	display: flex;
+	flex-direction: column;
+	width: 100vw; /*############ media querie ############*/
+	margin: 15px 0 15px 0vw; /*############# media querie #######"*/
+	padding: 1vw;
+	background-color: #f2f2f2;
+	/*border: solid 1px black;*/
+}
+
+
+.iconetitre /*place l'icone à droite du titre*/
+{
+	display: flex;
+	width: 100%; /* empecher que du contenu ne se place à droite.*/
+	padding-left: 1vw; 
+	/*border: solid 1px black;*/
+}
+
+.iconetitre i
+{
+	margin: auto 1vw auto auto;
+}
+
+
+.elements_populaires
+{
+	height: 150px;
+	display: flex;
+	background-color: white; 
+	border-radius: 20px;
+	margin: 10px;
+	/*border: solid 1px black;*/
+}
+
+.elements_populaires img
+{
+	width: 40%;
+	height: 100%;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	padding: 4px 4px 4px 4px; /*écarter l'image des bords.*/
+	/*border: solid 1px black;*/
+}
+
+.partie_droite
+{
+	display: flex;
+	flex-direction: column;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding-right: 2vw;
+	padding-bottom: 3px;
+	/*border: solid 1px black;*/
+}
+
+.partie_droite h3
+{
+	padding: 0px;
+	margin: 0px;
+	padding-left: 1vw;
+	padding-bottom: 15px;
+	padding-top: 1vw;
+	/*border: solid 1px black;*/
+}
+
+.partie_droite p
+{
+	padding: 0px;
+	margin: 0px;
+	padding-left: 1vw;
+	padding-bottom: 4px;
+	/*border: solid 1px black;*/
+}
+
+h3
+{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+
+
+
+/* passage écran supérieur à écran mobile */
+
+
+
+
+@media (min-width: 760px)
+{
+
+	#hebergement
+	{
+		flex-direction: column-reverse;
+		margin-left: 2.5vw; /* ########### media voir pour tablette ############## */
+	}
+
+	.bloc_hebergement
+	{
+		flex-direction: row;
+		width: 94vw;
+		margin: 15px 1vw 15px 0;
+		background-color: #f2f2f2;
+		padding: 1vw;
+		border-radius: 20px;
+	}
+
+	.bloc_hebergement h2 /*pour que le h2 prenne toute la ligne*/
+	{
+		width: 100%;
+		padding-left: 1vw;
+		/*border: solid 1px black;*/
+	}
+
+	.bloc_hebergement p
+	{
+		width: 100%;
+	}
+
+	.element_hebergement
+	{
+		display: flex;
+
+		width: 30vw;
+		height: 25vw;
+		margin: auto;
+		background-color: white;
+	}
+
+	.element_hebergement img
+	{
+		width: 100%;
+	}
+
+		
+	/* partie les plus populaires*/
+
+
+	.bloc_populaires
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 94vw;
+		margin: 15px 0 15px 1vw;
+		border-radius: 20px;
+		margin-left: 0vw;
+	}
+
+	.elements_populaires
+	{
+		display: flex;
+		flex-direction: column;
+		height: 25vw;
+		background-color: white; 
+		border-radius: 20px;
+		margin: 10px;
+		width: 30%;
+	}
+
+
+	.elements_populaires img
+	{
+		width: 100%;
+		height: 10vw;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 0px; 
+		padding: 4px 4px 4px 4px; /*écarter l'image des bords.*/
+		/*border: solid 1px black;*/
+	}
+
+}
+
+
+@media (min-width: 1024px)
+{
+
+	#hebergement
+	{
+		flex-direction: row;
+		margin-left: 2.5vw;
+	}
+
+	.bloc_hebergement
+	{
+		flex-direction: row;
+		width: 63vw; /*70% de la taille à gauche*/
+		margin: 15px 1vw 15px 1;
+		background-color: #f2f2f2;
+		padding: 1vw;
+		border-radius: 20px;
+	}
+
+	.bloc_hebergement h2 /*pour que le h2 prenne toute la ligne*/
+	{
+		width: 100%;
+		padding-left: 1vw;
+		/*border: solid 1px black;*/
+	}
+
+	.bloc_hebergement p
+	{
+		width: 100%;
+	}
+
+	.element_hebergement
+	{
+		width: 18vw;
+		height: 180px;
+		background-color: white;
+	}
+
+	.element_hebergement img
+	{
+		width: 100%;
+	}
+
+		
+	/* partie les plus populaires*/
+
+
+	.bloc_populaires
+	{
+		flex-direction: column;
+		flex-wrap: nowrap;
+		width: 29vw; /* 30% de la taille à droite*/
+		margin: 15px 0 15px 1vw; /*pas de marge à droite*/
+	}
+
+	.elements_populaires
+	{
+		flex-direction: row;
+		height: 33%;
+		width: 100%;
+		display: flex;
+		/*border: solid 1px black;*/
+
+	}
+
+	.elements_populaires img
+	{
+		width: 40%;
+		height: 100%;
+		border-bottom-left-radius: 20px;
+		border-top-right-radius: 0px;
+	}
+
+}
+
+
+
+
+
+/*	################################################## 
+	############## fin bloc hébergement ##############
 	##################################################	*/
 
 
@@ -449,7 +837,7 @@ footer /*flex position taille couleur fond footer*/
 
 /* passage au dessus de 700px */
 
-@media (min-width: 700px)
+@media (min-width: 1024px)
 {
 	footer
 	{
