@@ -835,7 +835,7 @@ footer /*flex position taille couleur fond footer*/
 
 /* passage au dessus de 700px */
 
-@media (min-width: 1024px)
+@media (min-width: 760px)
 {
 	footer
 	{
