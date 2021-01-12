@@ -1,9 +1,15 @@
-@font-face
+/*@font-face
 {
 	font-family: 'Raleway';
 	src: url('/fonts/static/Raleway-Regular.ttf') format('truetype'); 
-} 
+} */
 
+
+h2
+{
+	font-size: 20px;
+	font-weight: bold;
+}
 
 *
 {
@@ -37,8 +43,8 @@ header
 .barrenav img /*position logo site*/
 {
 	padding-top: 25px;
-	margin-right: 45%;
-	margin-left: 3vw;
+	margin-right: 33%;
+	margin-left: 5vw;
 }
 
 .barrenav /* flex menu navigation (hébergement activité etc) */
@@ -106,6 +112,30 @@ header
 }
 
 /* passage écran supérieur à écran mobile */
+
+@media (min-width: 360px)
+{
+
+
+
+.barrenav img /*position logo site*/
+{
+
+	margin-right: 45%;
+	
+}
+
+
+
+.demi /*position 50/50 liens hébergement et activités écrans mobiles*/
+{
+    width: 50vw;
+}
+
+
+}
+
+
 
 @media (min-width: 700px)
 {
@@ -200,12 +230,17 @@ header
 	/*border: solid 1px black;*/
 }
 
+#recherche h2, h3, p
+{
+	padding-left: 4vw;
+}
+
 .r1
 {
 	display: flex;
 	margin-bottom: 25px;
-	margin-left: 10vw;
-	/*border: solid 1px blue;*/
+	margin-left: 4vw;
+	border: solid 1px black;
 }
 
 
@@ -225,7 +260,7 @@ header
 {
 	background-color: #f2f2f2;
 	padding: 10px; /*repousse l'icone des bords*/
-	margin-left: 0px;
+	margin-left: -2vw;
 	border-radius: 10px;
 	color: white; /*couleur loupe*/
 	background-color: #0065fc;
@@ -241,12 +276,19 @@ header
 .zone_saisie
 {
 	padding: 6px;
-	font-size: 17px;
-	font-weight: 600;
 	border: 1px solid #f2f2f2;
 	width: 200px;
 	margin-left: 0px;
-	/*border: solid 3px black;*/
+	font-size: 20px;
+	font-weight: bold;
+	border: solid 1px black;
+}
+
+::placeholder
+{
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 /* passage écran supérieur à écran mobile */
@@ -319,7 +361,7 @@ header
 .elementsfiltre
 {
 	display: flex;
-	margin: 3px;
+	margin: 10px 1px 3px 4vw;
 	text-align: center;
 	border: solid;
 	border-radius: 40px;
@@ -340,7 +382,10 @@ header
 {
 	width: 100%;
 	height: 40px;
+	font-size: 18px;
+	font-weight: bold;
 	padding-top: 10px;
+	margin-bottom: -8px; 
 }
 
 .elementicones
@@ -364,7 +409,7 @@ header
 .element_iconeinfo
 {
 	display: flex;
-	margin: 35px 0 20px 0;
+	margin: 35px 0 20px 4vw;
 }
 
 .element_iconeinfo p
@@ -372,7 +417,7 @@ header
 	margin-right: auto;
 	margin-top: auto;
 	margin-bottom: auto;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 .iconeinfo
@@ -381,10 +426,10 @@ header
 	color: #0065fc;
 	border: 1px solid;
 	border-color: lightgray;
-	width: 20px;
-	height: 20px;
+	width: 32px;
+	height: 25px;
 	border-radius: 50%;
-	margin-right: 7px;
+	margin-right: 0px;
 }
 
 .tailleicone
@@ -453,16 +498,23 @@ header
 	border-radius: 20px;
 }
 
+.bloc_hebergement h2
+{
+	padding-left: 2vw;
+	margin: 0px 0 10px 2vw;
+}
+
 .bloc_hebergement h3
 {
 	padding-left: 1vw;
-	margin: 0;
+	margin: 0 0 5px 10px;
 }
 
 .bloc_hebergement p
 {
 	padding-left: 1vw;
-	margin: 0;
+	font-size: 15px;
+	margin: 0 0 0 10px;
 }
 
 /*##### étoiles ######*/
@@ -470,8 +522,17 @@ header
 .bloc_etoiles
 {
 	padding-left: 1vw;
-	margin-top: auto;
+	margin: auto 0 0 10px;
 	padding-bottom: 1vw;
+	font-size: 13px; /* taille des étoiles -_- */
+}
+
+.bloc_etoiles2
+{
+	padding-left: 1vw;
+	margin: auto 0 0 0;
+	padding-bottom: 1vw;
+	font-size: 13px; /* taille des étoiles -_- */
 }
 
 .bleu
@@ -490,8 +551,8 @@ header
 	flex-direction: column;
 	border-radius: 20px;
 	box-shadow: 1px 1px 1px 1px rgb(245, 242, 242);
-	width: 94vw;  /*########## media querie ############*/
-	margin: 1vw;
+	width: 90vw;  /*########## media querie ############*/
+	margin: 3vw;
 	height: 180px;
 	/*border: solid 1px black;*/
 }
@@ -544,23 +605,24 @@ header
 {
 	display: flex;
 	width: 100%; /* empecher que du contenu ne se place à droite.*/
-	padding-left: 1vw; 
+	padding-left: 3.5vw; 
 	/*border: solid 1px black;*/
 }
 
 .iconetitre i
 {
-	margin: auto 1vw auto auto;
+	margin: auto 5vw auto auto;
 }
 
 
 .elements_populaires
 {
-	height: 150px;
+	height: 140px;
+	width: 90vw;
 	display: flex;
 	background-color: white; 
 	border-radius: 20px;
-	margin: 10px;
+	margin: 10px 0 2px 3vw;
 	/*border: solid 1px black;*/
 }
 
@@ -580,6 +642,7 @@ header
 	flex-direction: column;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
+	margin-left: 12px;
 	padding-right: 2vw;
 	padding-bottom: 3px;
 	/*border: solid 1px black;*/
@@ -592,23 +655,21 @@ header
 	padding-left: 1vw;
 	padding-bottom: 15px;
 	padding-top: 1vw;
+	font-size: 16px;
 	/*border: solid 1px black;*/
 }
 
 .partie_droite p
 {
 	padding: 0px;
-	margin: 0px;
+	margin: -5px 0px 0px 0px;
+	font-size: 15px;
 	padding-left: 1vw;
 	padding-bottom: 4px;
 	/*border: solid 1px black;*/
 }
 
-h3
-{
-	font-size: 15px;
-	font-weight: bold;
-}
+
 
 
 
