@@ -366,6 +366,11 @@ header
 	font-size: 16px;
 }
 
+.t2
+{
+	margin-top: -10px;
+}
+
 .zone_saisie
 {
 	padding: 6px;
@@ -557,11 +562,46 @@ header
 	width: 25px;
 }
 
+}
 
 
+@media (min-width: 1024px)
+{
+
+
+	.filtres
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin-left: 8px;
+}
+
+
+.filtres h3
+{
+
+width: 7%;
+
+}
+
+
+.elementsfiltre
+{
+	margin: 10px 10px 0 20px;
+}
+
+
+.elementsfiltre p
+{
+	margin-left: 10px;
+	padding-right: 20px;
+}
 
 
 }
+
+
 
 
 /*	################################################## 
@@ -808,6 +848,7 @@ p.aff_plus
 	{
 		flex-direction: column-reverse;
 		margin-left: 2.5vw; /* ########### media voir pour tablette ############## */
+
 	}
 
 	.bloc_hebergement
@@ -824,10 +865,11 @@ p.aff_plus
 	{
 		width: 100%;
 		margin-left: -8px;
+		padding-top: 12px;
 		/*border: solid 1px black;*/
 	}
 
-		.bloc_hebergement h3 /*pour que le h2 prenne toute la ligne*/
+		.bloc_hebergement h3 
 	{
 		width: 100%;
 		margin: 5px 0 5px 10px;
@@ -898,7 +940,7 @@ aside
 		height: 23vw;
 		background-color: white; 
 		border-radius: 20px;
-		margin: 10px;
+		margin: 10px auto 10px auto ;
 		width: 30%;
 	}
 
@@ -926,45 +968,67 @@ aside
 	/*border: solid 1px black;*/
 }
 
+
+
+
+
 }
 
 
-@media (min-width: 1024px)
+@media (min-width: 1062px)
 {
 
 	#hebergement
 	{
 		flex-direction: row;
 		margin-left: 2.5vw;
+		
+
 	}
 
 	.bloc_hebergement
 	{
 		flex-direction: row;
-		width: 63vw; /*70% de la taille à gauche*/
-		margin: 15px 1vw 15px 1;
+		justify-content: space-around;
+		width: 62vw; /*70% de la taille à gauche*/
+		margin: 15px 1vw 15px 0;
 		background-color: #f2f2f2;
-		padding: 1vw;
+		padding: 1vw 1vw 20px 1.5vw;
 		border-radius: 20px;
+
 	}
 
 	.bloc_hebergement h2 /*pour que le h2 prenne toute la ligne*/
 	{
 		width: 100%;
-		padding-left: 1vw;
+		padding-left: 1.5vw;
+		/*border: solid 1px black;*/
+	}
+
+			.bloc_hebergement h3
+	{
+		margin: 5px 0 5px 2px;
+		font-size: 16px;
 		/*border: solid 1px black;*/
 	}
 
 	.bloc_hebergement p
 	{
-		width: 100%;
+	
+		margin: 0px 0 5px 2px;
+	}
+
+	.bloc_etoiles
+	{
+		margin: auto 0 5px 2px;
 	}
 
 	.element_hebergement
 	{
 		width: 18vw;
-		height: 180px;
+		height: 200px;
 		background-color: white;
+/*margin: 0 1vw 0 1vw;*/
 	}
 
 	.element_hebergement img
@@ -981,15 +1045,22 @@ aside
 		flex-direction: column;
 		flex-wrap: nowrap;
 		width: 29vw; /* 30% de la taille à droite*/
-		margin: 15px 0 15px 1vw; /*pas de marge à droite*/
+		margin: 15px 0 15px 1.6vw; /*pas de marge à droite*/
+		height: 600px;
+	}
+
+	.bloc_populaires h2
+	{
+		margin-bottom: 5px;
 	}
 
 	.elements_populaires
 	{
 		flex-direction: row;
-		height: 33%;
-		width: 100%;
+		height: 140px;
+		width: 90%;
 		display: flex;
+		margin: 15px auto 15px auto;
 		/*border: solid 1px black;*/
 
 	}
@@ -1001,6 +1072,19 @@ aside
 		border-bottom-left-radius: 20px;
 		border-top-right-radius: 0px;
 	}
+
+.partie_droite
+{
+	margin-left: 0px;
+}
+
+	.bloc_etoiles2
+{
+
+	margin: auto 0 0 0;
+	padding-bottom: 5px;
+
+}
 
 }
 
