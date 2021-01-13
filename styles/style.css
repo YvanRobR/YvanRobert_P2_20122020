@@ -1101,6 +1101,172 @@ aside
 
 
 
+/*	################################################## 
+	############## début bloc activités ##############
+	##################################################	*/
+
+
+.activites
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column; /* ############ media querie ############*/ 
+	margin: 15px 0vw 15px 4vw;
+	padding: 0vw; /* ############ media querie ############*/
+	border-radius: 20px;
+	
+}
+
+.element_activites
+{
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	box-shadow: 1px 1px 1px 1px rgb(245, 242, 242);
+	width: 90vw;  /*########## media querie ############*/
+	margin: 1vw;
+	height: 200px;
+	/*border: solid 1px black;*/
+}
+
+.element_activites img
+{
+	border-top-left-radius: 17px; /*bords arrondis sur l'image*/
+	border-top-right-radius: 17px;
+	/*border: solid 1px black;*/
+}
+
+.image_activites
+{
+	padding: 4px; /*laisser de l'espace entre l'image et le bord*/
+	height: 60%;
+	/*border: solid 1px black;*/
+}
+
+
+	.activites h2
+	{
+		margin-left: 20vw;
+		/*border: solid 1px black;*/
+	}
+
+
+
+@media (min-width: 768px)
+{
+.activites
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row; /* ############ media querie ############*/ 
+	margin: 15px 0vw 15px 2.5vw;
+	width: 94vw;
+	border: solid 1px black;
+
+}
+
+	.element_activites
+	{
+		width: 16vw;
+		
+	}
+
+
+	.activites h2
+	{
+		width: 100%;
+		/*border: solid 1px black;*/
+	}
+
+	.act1
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		width: 47vw;
+		border: solid 1px black;
+	
+	}
+	.act2
+	{
+display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+margin-left: 5px;
+		width: 46.5vw;
+		
+
+		border: solid 1px black;
+	}
+
+	.element_activites:nth-child(1)
+	{
+		border: solid 1px black;
+		height: 455px;
+		width: 310px;
+		margin-left: 0vw;
+	}
+
+	.element_activites:nth-child(2)
+	{
+		border: solid 1px black;
+		height: 245px;
+		width: 310px;
+margin-left: 1.3vw;
+	}
+
+		.element_activites:nth-child(2) img
+	{
+		
+		height: 80%;
+
+	}
+
+	.element_activites:nth-child(3)
+	{
+		border: solid 1px black;
+		margin-top: -185px;
+		margin-left: 24vw;
+		height: 170px;
+		width: 310px;
+	}
+
+		.element_activites:nth-child(3) img
+	{
+	
+		height: 70%;
+		
+	}
+
+	.element_activites img
+{
+	height: 88%;
+	border-top-left-radius: 17px; /*bords arrondis sur l'image*/
+	border-top-right-radius: 17px;
+	/*border: solid 1px black;*/
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*	################################################## 
+	############### fin bloc activités ###############
+	##################################################	*/
+
+
+
+
 
 
 
