@@ -320,13 +320,68 @@ header
 
 @media (min-width: 768px)
 {
+
+
+	.barrenav img /*position logo site*/
+	{
+		margin-right: 22%;
+		margin-left: 2.5vw;
+	}
 	.r1
 	{
 		display: flex;
 		margin-bottom: 25px;
 		margin-left: 0px;
-		/*border: solid 1px blue;*/
+		padding-left: 8px;
 	}
+
+.iconegauche
+{
+
+	padding: 18px 0 0 22px; /*repousse l'icone des bords*/
+
+	/*border: solid 2px black;*/
+}
+
+#recherche
+{
+	margin-top: 50px;
+}
+
+#recherche h2
+{
+	padding-left: 8px;
+	font-size: 22px;
+	width: 94vw;
+}
+
+#recherche h3
+{
+	padding-left: 8px;
+}
+
+#recherche p
+{
+	padding-left: 8px;
+	font-size: 16px;
+}
+
+.zone_saisie
+{
+	padding: 6px;
+	border: 1px solid #f2f2f2;
+	width: 200px;
+	height: 52px;
+	margin-left: 0px;
+	font-size: 20px;
+	font-weight: bold;
+	/*border: solid 1px black;*/
+}
+
+
+
+
+
 
 
 	.bouton_recherche1
@@ -336,7 +391,7 @@ header
 
 	.bouton_recherche2
 	{
-		padding: 8px; /*repousse le texte des bords*/
+		padding: 14px 8px 0 8px; /*repousse le texte des bords*/
 		background: #0065fc;
 		color: white;
 		font-size: 17px;
@@ -461,13 +516,51 @@ header
 
 /* passage écran supérieur à écran mobile */
 
-@media (min-width: 800px)
+@media (min-width: 768px)
 {
+
+
+
+	.filtres
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 8px;
+}
+
+.elementsfiltre
+{
+	margin: 10px 8px 0 0;
+}
+
   .filtres h3
-	{
-		margin-top: auto;
-		margin-bottom: auto;
-	}
+{
+	width: 100%;
+	height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 10px;
+	margin-bottom: -8px;
+	margin-left: -8px;
+}
+
+
+.element_iconeinfo
+{
+	display: flex;
+	margin: 35px 0 20px 8px;
+}
+
+.iconeinfo
+{
+	width: 25px;
+}
+
+
+
+
+
 }
 
 
@@ -708,7 +801,7 @@ p.aff_plus
 
 
 
-@media (min-width: 760px)
+@media (min-width: 768px)
 {
 
 	#hebergement
@@ -730,12 +823,20 @@ p.aff_plus
 	.bloc_hebergement h2 /*pour que le h2 prenne toute la ligne*/
 	{
 		width: 100%;
-		padding-left: 1vw;
+		margin-left: -8px;
+		/*border: solid 1px black;*/
+	}
+
+		.bloc_hebergement h3 /*pour que le h2 prenne toute la ligne*/
+	{
+		width: 100%;
+		margin: 5px 0 5px 10px;
 		/*border: solid 1px black;*/
 	}
 
 	.bloc_hebergement p
 	{
+		margin-top: -2px;
 		width: 100%;
 	}
 
@@ -744,8 +845,8 @@ p.aff_plus
 		display: flex;
 
 		width: 30vw;
-		height: 25vw;
-		margin: auto;
+		height: 200px;
+		margin: 10px 2px 10px 2px;
 		background-color: white;
 	}
 
@@ -754,6 +855,10 @@ p.aff_plus
 		width: 100%;
 	}
 
+p.aff_plus
+{
+	margin-left: 0px;
+}
 		
 	/* partie les plus populaires*/
 
@@ -769,11 +874,28 @@ p.aff_plus
 		margin-left: 0vw;
 	}
 
+	.iconetitre /*place l'icone à droite du titre*/
+{
+	display: flex;
+	width: 100%; /* empecher que du contenu ne se place à droite.*/
+	padding-left: 12px; 
+	/*border: solid 1px black;*/
+}
+
+.iconetitre i
+{
+	margin: auto 20px auto auto;
+}
+
+aside
+{
+	height: 40vw;
+}
 	.elements_populaires
 	{
 		display: flex;
 		flex-direction: column;
-		height: 25vw;
+		height: 23vw;
 		background-color: white; 
 		border-radius: 20px;
 		margin: 10px;
@@ -791,6 +913,18 @@ p.aff_plus
 		padding: 4px 4px 4px 4px; /*écarter l'image des bords.*/
 		/*border: solid 1px black;*/
 	}
+
+
+
+	.partie_droite p
+{
+	padding: 0px;
+	margin: -10px 0px 0px 0px;
+	font-size: 15px;
+	padding-left: 1vw;
+	padding-bottom: 4px;
+	/*border: solid 1px black;*/
+}
 
 }
 
