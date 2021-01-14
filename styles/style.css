@@ -996,7 +996,7 @@ p.aff_plus
 	##################################################	*/
 
 
-.activites
+#activites
 {
 	display: flex;
 	flex-wrap: wrap;
@@ -1030,12 +1030,12 @@ p.aff_plus
 	height: 60%;
 }
 
-.activites h2
+#activites h2
 {
 	margin-left: 4px;
 }
 
-.activites h3
+#activites h3
 {
 	font-size: 16px;
 	margin-left: 28px;
@@ -1054,7 +1054,7 @@ p.aff_plus
 
 @media (min-width: 768px)
 {
-	.activites
+	#activites
 	{
 		display: flex;
 		flex-direction: row;
@@ -1075,12 +1075,12 @@ p.aff_plus
 		margin: 0 0 2vw 0;
 	}
 
-	.activites h2
+	#activites h2
 	{
 		width: 100%;
 	}
 
-	.activites h3
+	#activites h3
 	{
 		font-size: 1em;
 		margin-left: 14px;
@@ -1151,7 +1151,7 @@ p.aff_plus
 @media (min-width: 1126px)
 {
 
-	.activites
+	#activites
 	{
 		display: flex;
 		flex-direction: row;
@@ -1161,7 +1161,7 @@ p.aff_plus
 		width: 94vw;
 	}
 
-	.activites h3
+	#activites h3
 	{
 		font-size: 1em;
 		margin-left: 22px;
