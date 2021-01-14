@@ -7,7 +7,7 @@
 
 h2
 {
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: bold;
 }
 
@@ -233,7 +233,7 @@ header
 #recherche h2
 {
 	padding-left: 4vw;
-	font-size: 22px;
+	
 	width: 94vw;
 }
 
@@ -300,6 +300,7 @@ header
 	width: 62vw;
 	height: 52px;
 	margin-left: 0px;
+	padding-left: 16px;
 	font-size: 20px;
 	font-weight: bold;
 	/*border: solid 1px black;*/
@@ -351,7 +352,6 @@ header
 #recherche h2
 {
 	padding-left: 8px;
-	font-size: 22px;
 	width: 94vw;
 }
 
@@ -373,12 +373,12 @@ header
 
 .zone_saisie
 {
-	padding: 6px;
+	padding: 16px;
 	border: 1px solid #f2f2f2;
-	width: 200px;
+	width: 235px;
 	height: 52px;
 	margin-left: 0px;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
 	/*border: solid 1px black;*/
 }
@@ -396,15 +396,16 @@ header
 
 	.bouton_recherche2
 	{
-		padding: 14px 8px 0 8px; /*repousse le texte des bords*/
+		padding: 14px 6px 0 18px; /*repousse le texte des bords*/
 		background: #0065fc;
 		color: white;
-		font-size: 17px;
-		font-weight: 600;
+		font-size: 18px;
+		font-weight: bold;
 		border: none;
 		border-top-right-radius: 10px;
 		border-bottom-right-radius: 10px;
 		margin-left: -1px; /* permet de coller le bouton au formulaire*/
+		width: 135px;
 	}
 
 }
@@ -493,11 +494,8 @@ header
 }
 
 .element_iconeinfo p
-{
-	margin-right: auto;
-	margin-top: auto;
-	margin-bottom: auto;
-	font-size: 16px;
+{	
+	margin: 3px auto auto -5px;
 }
 
 .iconeinfo
@@ -596,7 +594,11 @@ width: 7%;
 {
 	margin-left: 10px;
 	padding-right: 20px;
+
 }
+
+
+
 
 
 }
@@ -655,7 +657,7 @@ width: 7%;
 {
 	padding-left: 2vw;
 	margin: 0px 0 10px 2vw;
-	font-size: 21px;
+	
 	font-weight: bold;
 }
 
@@ -1112,7 +1114,7 @@ aside
 	flex-wrap: wrap;
 	flex-direction: column; /* ############ media querie ############*/ 
 	margin: 15px 0vw 15px 4vw;
-	padding: 0vw; /* ############ media querie ############*/
+	padding: 2vw 0 0 0; /* ############ media querie ############*/
 	border-radius: 20px;
 	
 }
@@ -1133,6 +1135,7 @@ aside
 {
 	border-top-left-radius: 17px; /*bords arrondis sur l'image*/
 	border-top-right-radius: 17px;
+	height: 75%;
 	/*border: solid 1px black;*/
 }
 
@@ -1146,9 +1149,17 @@ aside
 
 	.activites h2
 	{
-		margin-left: 20vw;
+		margin-left: 4px;
 		/*border: solid 1px black;*/
 	}
+
+	.activites h3
+{
+	font-size: 16px;
+	margin-left: 28px;
+	font-weight: bold;
+	margin-top: auto;;
+}
 
 
 
@@ -1157,99 +1168,307 @@ aside
 .activites
 {
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
-	flex-direction: row; /* ############ media querie ############*/ 
-	margin: 15px 0vw 15px 2.5vw;
+ 
+	justify-content: space-between;
+	margin: 0 0 0 2.5vw;
 	width: 94vw;
-	border: solid 1px black;
 
+
+}
+
+
+.image_activites
+{
+	padding: 4px; /*laisser de l'espace entre l'image et le bord*/
+	  
+	
 }
 
 	.element_activites
 	{
 		width: 16vw;
-		
+		margin: 0 0 2vw 0;
 	}
 
 
 	.activites h2
 	{
 		width: 100%;
-		/*border: solid 1px black;*/
+		
 	}
 
-	.act1
+
+
+.activites h3
+{
+	font-size: 1em;
+	margin-left: 14px;
+	font-weight: bold;
+	margin-top: 1vw;
+}
+
+
+
+	.act1, .act2, .act3, .act4, .act5, .act6
 	{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-
-		width: 47vw;
-		border: solid 1px black;
-	
+		
+		
+		width: 45vw;
+		
 	}
+
+
+/*	.act1
+	{
+		height: 31vw;
+		border: solid 1px black;
+	}
+
+	.act1 img
+	{
+		height: 89%;
+	}
+
+
 	.act2
 	{
-display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-margin-left: 5px;
-		width: 46.5vw;
-		
-
+		height: 17vw;
 		border: solid 1px black;
 	}
 
-	.element_activites:nth-child(1)
+	.act2 img
 	{
+		height: 79%;
+	}
+
+	.act3
+	{
+		height: 11.5vw;
+		margin-top: 2.4vw;
 		border: solid 1px black;
-		height: 455px;
-		width: 310px;
-		margin-left: 0vw;
 	}
 
-	.element_activites:nth-child(2)
+	.act3 img
 	{
-		border: solid 1px black;
-		height: 245px;
-		width: 310px;
-margin-left: 1.3vw;
-	}
-
-		.element_activites:nth-child(2) img
-	{
-		
-		height: 80%;
-
-	}
-
-	.element_activites:nth-child(3)
-	{
-		border: solid 1px black;
-		margin-top: -185px;
-		margin-left: 24vw;
-		height: 170px;
-		width: 310px;
-	}
-
-		.element_activites:nth-child(3) img
-	{
-	
 		height: 70%;
 		
 	}
 
+	.act4
+	{
+		height: 31vw;
+		border: solid 1px yellow;
+	}
+
+	.act4 img
+	{
+		height: 89%
+	}
+
+	.act5
+	{
+		height: 14vw;
+		border: solid 1px blue;
+	}
+
+	.act5 img
+	{
+		height: 74%;
+	}
+
+	.act6
+	{
+		height: 14vw;
+		margin-top: 2.9vw;
+		border: solid 1px red;
+	}
+
+	.act6 img
+	{
+		height: 80%;
+		
+	}
+*/
+
+.act1, .act4
+{
+	height: 52vw;
+}
+
+.act1 img
+{
+	height: 89%;
+}
+
+.act4 img
+{
+	height: 89%;
+}
+
+.act2, .act3, .act5, .act6
+{
+	height: 25vw;
+}
+
+.actb1
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.actb2
+{
+	display: flex;
+	flex-direction: column;
+}
+.r7:nth-child(1)
+{
+	
+	order: 4;
+}
+
+.r7:nth-child(2)
+{
+	
+	order: 1;
+}
+
+.r7:nth-child(4)
+{
+	
+	order: 2;
+}
+
 	.element_activites img
 {
-	height: 88%;
+	
 	border-top-left-radius: 17px; /*bords arrondis sur l'image*/
 	border-top-right-radius: 17px;
-	/*border: solid 1px black;*/
+	
+}
 }
 
+@media (min-width: 1126px)
+{
+
+.activites
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+ 
+	justify-content: space-between;
+	margin: 0 0 0 2.5vw;
+	width: 94vw;
+	
 }
 
 
+.activites h3
+{
+	font-size: 1em;
+	margin-left: 22px;
+	margin-top: 1vw;
+}
+
+.act1, .act2, .act3, .act4, .act5, .act6
+	{
+		
+		
+		width: 21.5vw;
+		
+	}
+
+
+	.act1
+	{
+		height: 31vw;
+	}
+
+	.act1 img
+	{
+		height: 89%;
+	}
+
+
+	.act2
+	{
+		height: 17vw;
+	}
+
+	.act2 img
+	{
+		height: 79%;
+	}
+
+	.act3
+	{
+		height: 11.5vw;
+		margin-top: 0.5vw;
+	}
+
+	.act3 img
+	{
+		height: 70%;
+		
+	}
+
+	.act4
+	{
+		height: 31vw;
+	}
+
+	.act4 img
+	{
+		height: 89%
+	}
+
+	.act5
+	{
+		height: 14vw;
+	}
+
+	.act5 img
+	{
+		height: 74%;
+	}
+
+	.act6
+	{
+		height: 14vw;
+		margin-top: 1vw;
+	}
+
+	.act6 img
+	{
+		height: 80%;
+		
+	}
+
+
+.r7:nth-child(1)
+{
+	
+	order: 2;
+
+}
+
+.r7:nth-child(2)
+{
+	
+	order: 4;
+}
+
+.r7:nth-child(4)
+{
+	
+	order: 0;
+}
+
+
+}
 
 
 
