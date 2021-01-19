@@ -21,6 +21,7 @@ body
 {
 	margin: 0px;
 	/*overflow: hidden;*/
+	/*border: solid 1px black;*/
 }
 
 img
@@ -573,7 +574,7 @@ header
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column-reverse; /* ############ media querie ############*/ 
-	width: 94vw;
+	
 }
 
 .bloc_hebergement
@@ -581,9 +582,23 @@ header
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column; /* ############ media querie ############*/ 
-	margin: 15px 1vw 15px 0;
-	padding: 2vw; /* ############ media querie ############*/
+	margin-left: 4vw;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	border-radius: 20px;
+}
+
+.element_hebergement
+{
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	box-shadow: 1px 1px 1px 1px rgb(245, 242, 242);
+	width: 90vw;  /*########## media querie ############*/
+	
+	margin-top: 3vw;
+	margin-bottom: 3vw;
+	height: 200px;
 }
 
 .bloc_hebergement h2
@@ -636,16 +651,7 @@ header
 	color: rgb(214, 214, 214);
 }
 
-.element_hebergement
-{
-	display: flex;
-	flex-direction: column;
-	border-radius: 20px;
-	box-shadow: 1px 1px 1px 1px rgb(245, 242, 242);
-	width: 90vw;  /*########## media querie ############*/
-	margin: 3vw;
-	height: 200px;
-}
+
 
 .element_hebergement img
 {
@@ -682,8 +688,8 @@ p.aff_plus
 {
 	display: flex;
 	flex-direction: column;
-	width: 100vw;
-	margin: 15px 0 15px 0vw;
+	width: 100%;
+	margin: 15px auto 15px 0px;
 	padding: 1vw 1vw 10vw 1vw;
 	background-color: #f2f2f2;
 }
@@ -708,7 +714,9 @@ p.aff_plus
 	display: flex;
 	background-color: white; 
 	border-radius: 20px;
-	margin: 10px 0 2px 3vw;
+	margin-left: 4vw;
+	margin-top: 10px;
+	margin-bottom: 2px;
 }
 
 .elements_populaires img
@@ -1271,7 +1279,7 @@ footer /*flex position taille couleur fond footer*/
 {
 	display: flex;
 	flex-direction: column;
-	width: 100vw;
+	
 	background-color: #f2f2f2;
 	padding-top: 25px;
 	padding-bottom: 25px;
