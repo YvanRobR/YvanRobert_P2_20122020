@@ -1030,7 +1030,7 @@ p.aff_plus
 	border-top-left-radius: 20px; /*bords arrondis sur l'image*/
 	border-top-right-radius: 20px;
 	height: 75%;
-	padding-right: 0px;
+	padding: 0px;
 }
 
 .image_activites
