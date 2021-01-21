@@ -395,7 +395,6 @@ header
 {
 	cursor: pointer; /*curseur doigt*/
 	background-color: #f2f2f2;
-
 }
 
 .elementsfiltre
@@ -544,7 +543,15 @@ header
 		margin-left: 10px;
 		padding-right: 20px;
 	}
+
+	.elementsfiltre:hover
+	{
+		transition: transform 1s;
+		transform: scale(1.1);
+	}
 }
+
+	
 
 /*	################################################## 
 	################ Fin bloc filtres ################
