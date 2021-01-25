@@ -42,7 +42,7 @@ header
 .barrenav img /*position logo site*/
 {
 	padding-top: 25px;
-	margin-right: 33%;
+	margin-right: 25%;
 	margin-left: 5vw;
 }
 
@@ -77,9 +77,9 @@ header
 	color: #0065fc;
 }
 
-.demi /*position 50/50 liens hébergement et activités écrans mobiles*/
+.nav1
 {
-    width: 50vw;
+	width: 50%;
 }
 
 .hoovernav /*position et taille éléments pour passage souris*/
@@ -120,16 +120,11 @@ header
 		{
 			margin-right: 45%;
 		}
-
-	.demi /*position 50/50 liens hébergement et activités écrans mobiles*/
-		{
-    	width: 50vw;
-		}
 }
 
 
 
-@media (min-width: 700px)
+@media (min-width: 768px)
 {
 
 	.barrenav
@@ -156,6 +151,7 @@ header
 	{
 		margin-left: auto;
 		margin-bottom: 10px;
+		margin-right: 4vw;
 	}
 
 	.demi
@@ -165,7 +161,7 @@ header
 
 	.inscription
 	{
-		width: 150px;
+		
 		margin-bottom: 10px;
 	}
 
@@ -177,11 +173,13 @@ header
 	.hoovernav:nth-child(3)/*inversion éléments navigation*/
 	{
 		order: 2;
+		width: 150px;
 	}
 
 	.hoovernav:nth-child(4)/*inversion éléments navigation*/
 	{
 		order: 3;
+		width: 150px;
 	}
 
 	.hoovernav
@@ -193,6 +191,7 @@ header
 	{
 		background-color: white;
 		margin-top: 0px;
+		
 	} 
 }
 /*	################################################## 
@@ -349,7 +348,7 @@ header
 	{
 		padding: 16px;
 		border: 1px solid #f2f2f2;
-		width: 235px;
+		width: 230px;
 		height: 52px;
 		margin-left: 0px;
 		font-size: 18px;
@@ -395,23 +394,22 @@ header
 {
 	cursor: pointer; /*curseur doigt*/
 	background-color: #f2f2f2;
+	transition: background-color 1s, transform 1s; /* #### fade background-color: #f2f2f2 */
 }
 
 .elementsfiltre
 {
 	display: flex;
 	margin: 10px 1px 3px 4vw;
-	text-align: center;
 	height: 48px;
 	border: solid 2px lightgrey;
 	border-radius: 40px;
-	transition: background-color 1s; /* #### fade background-color: #f2f2f2 */
+	padding-right: 1px;
 }
 
 .elementsfiltre p
 {
-	padding-left: 10px;
-	padding-right: 20px;
+	padding-right: 10px;
 	margin-top: auto;
 	margin-bottom: auto;
 	font-weight: bold;
@@ -431,6 +429,7 @@ header
 {
 	display: flex;
 	align-items: center;
+	text-align: center;
 	background-color: #deebff;
 	height: 48px;
 	border-radius: 50%;
@@ -476,15 +475,22 @@ header
 
 
 
+@media (min-width: 400px)
+{
+	
+	.elementsfiltre p
+	{
+		padding-right: 20px;
+		margin-left: -10px;
+	}
+}
+
 /* passage écran supérieur à écran mobile */
 
 @media (min-width: 768px)
 {
 	.filtres
 	{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
 		margin-left: 8px;
 		margin-top: 40px;
 	}
@@ -503,6 +509,12 @@ header
 		padding-top: 10px;
 		margin-bottom: -8px;
 		margin-left: -8px;
+	}
+
+	.elementsfiltre p
+	{
+		margin-left: 0px;
+		padding-right: 10px;
 	}
 
 	.element_iconeinfo
@@ -531,11 +543,13 @@ header
 	.filtres h3
 	{
 		width: 6%;
+		margin-top: 14px;
 	}
 
 	.elementsfiltre
 	{
 		margin: 10px 10px 0 20px;
+
 	}
 
 	.elementsfiltre p
@@ -546,7 +560,6 @@ header
 
 	.elementsfiltre:hover
 	{
-		transition: transform 1s;
 		transform: scale(1.1);
 	}
 }
@@ -611,8 +624,8 @@ header
 
 .bloc_hebergement h2
 {
-	padding-left: 2vw;
-	margin: 0px 0 10px 2vw;
+	
+	margin: 0px 0 10px 1vw;
 	font-weight: bold;
 }
 
@@ -697,11 +710,16 @@ p.aff_plus
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	margin: 15px auto 15px auto;
-	padding: 5vw 1vw 10vw 1vw;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 3vw 1vw 10vw 1vw;
 	background-color: #f2f2f2;
 }
 
+.bloc_populaires h2
+{
+	margin-left: 1vw;
+}
 
 .iconetitre /*place l'icone à droite du titre*/
 {
@@ -712,7 +730,8 @@ p.aff_plus
 
 .iconetitre i
 {
-	margin: auto 5vw auto auto;
+	margin: auto 2vw auto auto;
+	font-size: 21px;
 }
 
 .elements_populaires
@@ -754,7 +773,7 @@ p.aff_plus
 	margin: 0px;
 	padding-left: 1vw;
 	padding-bottom: 15px;
-	padding-top: 1vw;
+	padding-top: 4vw;
 	font-size: 16px;
 }
 
@@ -779,7 +798,6 @@ p.aff_plus
 	{
 		flex-direction: column-reverse;
 		margin-left: 2.5vw;
-
 	}
 
 	.bloc_hebergement
@@ -795,7 +813,7 @@ p.aff_plus
 	.bloc_hebergement h2 /*pour que le h2 prenne toute la ligne*/
 	{
 		width: 100%;
-		margin-left: -4px;
+		margin-left: 2vw;
 		padding-top: 12px;
 	}
 
@@ -843,6 +861,7 @@ p.aff_plus
 		margin: 15px 0 0px 1vw;
 		border-radius: 20px;
 		margin-left: 0vw;
+		padding-top: 1vw;
 	}
 
 	.iconetitre /*place l'icone à droite du titre*/
@@ -854,7 +873,7 @@ p.aff_plus
 
 	.iconetitre i
 	{
-		margin: auto 20px auto auto;
+		margin: auto 1.5vw auto auto;
 	}
 
 	aside
@@ -891,6 +910,11 @@ p.aff_plus
 		padding-left: 1vw;
 		padding-bottom: 4px;
 	}
+
+		.partie_droite h3
+	{
+		padding-top: 1vw;
+	}
 }
 
 
@@ -917,7 +941,7 @@ p.aff_plus
 	.bloc_hebergement h2 /*pour que le h2 prenne toute la ligne*/
 	{
 		width: 100%;
-		padding-left: 1.5vw;
+		margin-left: 1vw;
 	}
 
 	.bloc_hebergement h3
@@ -958,13 +982,15 @@ p.aff_plus
 		flex-wrap: nowrap;
 		width: 29vw; /* 30% de la taille à droite*/
 		margin: 15px 0 15px 1.6vw;
-		padding-top: 2vw;
+		padding-top: 1vw;
 		height: 600px;
 	}
 
 	.bloc_populaires h2
 	{
 		margin-bottom: 5px;
+		margin-top: 1.8vw;
+		margin-left: 0.4vw;
 	}
 
 	.elements_populaires
@@ -989,10 +1015,17 @@ p.aff_plus
 		margin-left: 0px;
 	}
 
+
 	.bloc_etoiles2
 	{
+		
 		margin: auto 0 0 0;
-		padding-bottom: 5px;
+		padding-bottom: 10px;
+	}
+
+	.iconetitre i
+	{
+		margin: 2vw 1.5vw auto auto;
 	}
 }
 
@@ -1290,12 +1323,14 @@ footer /*flex position taille couleur fond footer*/
 	padding-top: 25px;
 	padding-bottom: 25px;
 	margin-top: 40px;
-	margin-left: -20px;
+	margin-left: 0px;
 }
 
 .boiteFooter ul /*formatage listes à puce*/
 {
 	list-style-type: none;
+	padding: 0 0 0 0;
+	margin-left: 4vw;
 }
 
 .boiteFooter /*position éléments footer*/
@@ -1315,14 +1350,19 @@ footer /*flex position taille couleur fond footer*/
 	padding-top: 15px;
 }
 
-/* passage au dessus de 700px */
+/* passage au dessus de 768px */
 
-@media (min-width: 760px)
+@media (min-width: 768px)
 {
 	footer
 	{
     	flex-direction: row;
     	margin-left: 0px;
+	}
+
+	.boiteFooter ul /*formatage listes à puce*/
+	{
+		margin-left: 3vw;
 	}
 }
 
