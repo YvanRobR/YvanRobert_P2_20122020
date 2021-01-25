@@ -283,11 +283,12 @@ header
 	font-weight: bold;
 }
 
-::placeholder
+::placeholder /* zone saisie recherche*/
 {
 	color: black;
 	font-size: 18px;
 	font-weight: bold;
+	opacity: 1; /* corrige la transparence sur firefox firefox */
 }
 
 
