@@ -1,3 +1,10 @@
+h1
+{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+
 h2
 {
 	font-size: 22px;
@@ -208,7 +215,7 @@ header
 	margin-right: 2vw;
 }
 
-#recherche h2
+#recherche h1
 {
 	padding-left: 4vw;
 	width: 94vw;
@@ -316,7 +323,7 @@ header
 		margin-top: 50px;
 	}
 
-	#recherche h2
+	#recherche h1
 	{
 		padding-left: 8px;
 		width: 94vw;
